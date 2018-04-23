@@ -1,17 +1,14 @@
 class Flirtbot
+	def flirt
+		first_flirts = ["Hey baby,", "You look great,", "Nice shoes,"]
 
-	def response
-		first_flirt = ["Hey baby,", "You look great,", "Nice shoes,"]
-		first_flirt.sample
+		second_flirts = ["can I get your number?", "I love your juicy thighs.", "let's get a drink."]
 
-		second_flirt = ["can I get your number?", "I love your juicy thighs.", "let's get a drink."]
-		second_flirt.sample
-
-		first_flirt.sample + second_flirt.sample
+		first_flirts.sample + second_flirts.sample
 	end
 end
 
 flirtbot4000 = Flirtbot.new
 
 gets
-puts flirtbot4000.response
+puts flirtbot4000.flirt
